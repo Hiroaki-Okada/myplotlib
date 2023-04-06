@@ -14,6 +14,7 @@ def scatter_plot(x, y):
     plt.tight_layout()
     plt.savefig('Scatter.jpeg')
 
+
 def run():
     print('Enter input_name (xxx.xlsx or xxx.csv)')
     input_name = input()

@@ -8,9 +8,9 @@ def scatter_plot(x, y):
     plt.scatter(x, y, s=200, alpha=0.8, c='darkgrey')
     plt.xlabel('x', fontsize=30)
     plt.ylabel('y', fontsize=30)
-    plt.tick_params(labelsize=20)
-    # plt.xlim([0, 100])
-    # plt.ylim([0, 100])
+    plt.tick_params(labelsize=30)
+    plt.xlim([0, 100])
+    plt.ylim([0, 100])
     plt.tight_layout()
     plt.savefig('Scatter.jpeg')
 
@@ -20,11 +20,11 @@ def run():
     input_name = input()
 
     if 'xlsx' in input_name:
-           df = pd.read_excel(input_name)
+        df = pd.read_excel(input_name)
     elif 'csv' in input_name:
-           df = pd.read_csv(input_name)
+        df = pd.read_csv(input_name)
     else:
-           raise ValueError('Invalid input name')
+        raise ValueError('Invalid input name')
 
     x = df.iloc[:, 0]
     y = df.iloc[:, 1]
@@ -33,4 +33,4 @@ def run():
 
 
 if __name__ == '__main__':
-        run()
+    run()

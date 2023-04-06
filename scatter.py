@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-def scatter_plot(x, y):
+def plot_scatter(x, y):
     plt.figure(figsize=(12, 12))
     plt.scatter(x, y, s=200, alpha=0.8, c='darkgrey')
     plt.xlabel('x', fontsize=30)
@@ -29,7 +29,7 @@ def run():
     x = df.iloc[:, 0]
     y = df.iloc[:, 1]
 
-    scatter_plot(x, y)
+    plot_scatter(x, y)
 
 
 if __name__ == '__main__':

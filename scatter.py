@@ -11,6 +11,7 @@ def plot_scatter(x, y):
     plt.tick_params(labelsize=30)
     plt.xlim([0, 100])
     plt.ylim([0, 100])
+    plt.grid(axis='both', linestyle='dotted', linewidth=1.5)
     plt.tight_layout()
     plt.savefig('Scatter.jpeg')
 
